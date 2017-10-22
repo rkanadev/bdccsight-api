@@ -57,9 +57,9 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
-  if (isWin) dataDir = '%APPDATA%\\BDCCurrency\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/BDCCurrency/';
-  if (isLinux) dataDir = process.env.HOME + '/.bdccurrency/';
+  if (isWin) dataDir = '%APPDATA%\\BDCC\\';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/BDCC/';
+  if (isLinux) dataDir = process.env.HOME + '/.bdcc/';
 }
 dataDir += network === 'testnet' ? 'testnet3' : '';
 
