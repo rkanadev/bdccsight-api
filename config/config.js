@@ -25,8 +25,8 @@ var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight-bdcc');
   env = 'livenet';
   db = home;
   port = '3000';
-  b_port = '45860';
-  p2p_port = '45850';
+  b_port = '40570';
+  p2p_port = '40580';
 //} else {
 //  env = 'testnet';
 //  db = home + '/testnet';
